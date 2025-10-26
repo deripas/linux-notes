@@ -1,4 +1,4 @@
-# Fix tachpad
+# Fix touchpad
 Проблема с тем, что на ThinkPad T470p после выхода из сна перестают работать физические кнопки тачпада (TrackPad, но не TrackPoint), довольно типична — это баг в драйверах psmouse/libinput и power management. 
 Он наблюдается и в Ubuntu, и в openSUSE, и связан с тем, что устройство не инициализируется корректно после suspend/resume.
 
