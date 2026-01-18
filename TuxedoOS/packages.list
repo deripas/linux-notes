@@ -1,0 +1,14 @@
+# base
+btrfs-progs
+snapper
+flatpak
+
+# utils
+git
+curl
+wget
+
+# tuxedo-os
+tuxedo-wallpapers-2204
+tuxedo-wallpapers-2404
+tuxedo-grub-theme
