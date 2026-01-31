@@ -13,20 +13,4 @@ mv tmp/* /etc/nixos/
 ```
 
 
-###zsh
-```bash
-nano ~/.zshrc
-```
 
-```
-# Powerlevel10k
-source /run/current-system/sw/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-
-# basic
-export EDITOR=vim
-```
-
-```bash
-p10k configure
-```
