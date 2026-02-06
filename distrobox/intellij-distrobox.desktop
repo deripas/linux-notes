@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=13.0
+Type=Application
+Terminal=false
+Exec=distrobox enter --name ubuntu  -- /home/anton/.distrobox/ubuntu/idea-IU/bin/idea
+Name=IntellJ Idea
+Icon=/home/anton/.distrobox/ubuntu/idea-IU/bin/idea.png

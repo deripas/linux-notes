@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Unity Hub
+Exec=sh -c 'distrobox enter --name ubuntu -- unityhub "$1"' _ %u
+Type=Application
+Terminal=false
+MimeType=x-scheme-handler/unityhub;
+Icon=draw-cuboid
