@@ -9,6 +9,7 @@ RUN apt update && apt install -y \
     sudo \
     mc \
     zsh \
+    docker-cli \
     git \
     locales \
     dbus \
