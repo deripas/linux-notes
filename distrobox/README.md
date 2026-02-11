@@ -10,5 +10,6 @@ distrobox create \
   --image localhost/ubuntu-dev:24.04 \
   --home ~/.distrobox/ubuntu \
   --nvidia \
-  --volume /run/user/1000/podman/podman.sock:/var/run/docker.sock
+  --volume /run/user/1000/podman:/run/user/1000/podman \
+  --additional-flags "--env DOCKER_HOST=unix:///run/user/1000/podman/podman.sock"
 ```
