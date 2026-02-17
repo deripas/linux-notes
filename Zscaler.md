@@ -94,3 +94,28 @@ ip route get 10.61.1.10
 * Убедиться, что включён ip_forward
 * Проверить/применить iptables
 * Убедиться, что маршруты на хосте активны
+
+# Настройка сети
+## для NAT (DHCP)
+```
+sudo nmcli connection add type ethernet ifname enp2s0 con-name nat ipv4.method auto
+sudo nmcli connection modify nat connection.autoconnect yes
+sudo nmcli connection up nat
+```
+## host-only через DHCP
+```
+sudo nmcli connection add type ethernet ifname enp8s0 con-name hostonly ipv4.method auto
+sudo nmcli connection modify hostonly connection.autoconnect yes
+sudo nmcli connection up hostonly
+
+```
+## host-only со статикой
+```
+sudo nmcli connection add type ethernet ifname enp8s0 con-name hostonly \
+  ipv4.method manual \
+  ipv4.addresses 10.10.10.195/24
+sudo nmcli connection modify hostonly ipv4.gateway ""
+sudo nmcli connection modify hostonly connection.autoconnect yes
+sudo nmcli connection up hostonly
+
+```
