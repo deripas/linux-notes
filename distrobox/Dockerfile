@@ -9,6 +9,7 @@ RUN apt update && apt install -y \
     sudo \
     mc \
     zsh \
+    zstd \
     docker-cli \
     git \
     locales \
