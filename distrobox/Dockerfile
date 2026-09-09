@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:26.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG=en_US.UTF-8
@@ -9,9 +9,12 @@ RUN apt update && apt install -y \
     sudo \
     mc \
     zsh \
+    fzf \
+    fastfetch \
     zstd \
     docker-cli \
     git \
+    curl \
     locales \
     dbus \
     dbus-x11 \
