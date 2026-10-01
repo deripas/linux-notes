@@ -20,7 +20,18 @@ RUN apt update && apt install -y \
     dbus \
     dbus-x11 \
     \
+    # GPU
+    mesa-utils \
+    vulkan-tools \
+    libvulkan1
     libglu1-mesa \
+    libgl1-mesa-dri \
+    libglx-mesa0 \
+    libgl1-mesa-glx \
+    libglvnd0 \
+    libgl1 \
+    libglx0 \
+    libegl1 \
     \
     # Chromium / CEF
     libnss3 \
@@ -57,3 +68,5 @@ RUN apt update && apt install -y \
     && locale-gen en_US.UTF-8 \
     && apt clean \
     && rm -rf /var/lib/apt/lists/*
+
+RUN rm -f /etc/os-release && cp /usr/lib/os-release /etc/os-release
