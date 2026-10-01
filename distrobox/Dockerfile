@@ -7,6 +7,7 @@ ENV LC_ALL=en_US.UTF-8
 RUN apt update && apt install -y \
     ca-certificates \
     sudo \
+    nano \
     mc \
     zsh \
     fzf \
@@ -18,6 +19,8 @@ RUN apt update && apt install -y \
     locales \
     dbus \
     dbus-x11 \
+    \
+    libglu1-mesa \
     \
     # Chromium / CEF
     libnss3 \
