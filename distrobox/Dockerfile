@@ -22,16 +22,17 @@ RUN apt update && apt install -y \
     \
     # GPU
     mesa-utils \
+    mesa-vulkan-drivers \
     vulkan-tools \
-    libvulkan1
+    libvulkan1 \
     libglu1-mesa \
     libgl1-mesa-dri \
     libglx-mesa0 \
-    libgl1-mesa-glx \
     libglvnd0 \
     libgl1 \
     libglx0 \
     libegl1 \
+    libpci3 \
     \
     # Chromium / CEF
     libnss3 \
