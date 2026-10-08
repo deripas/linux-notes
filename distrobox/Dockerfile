@@ -14,6 +14,7 @@ RUN apt update && apt install -y \
     fastfetch \
     zstd \
     docker-cli \
+    docker-compose \
     git \
     curl \
     locales \
